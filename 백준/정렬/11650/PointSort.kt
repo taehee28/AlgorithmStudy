@@ -11,7 +11,6 @@ fun main() {
         list.add(x.toInt() to y.toInt())
     }
 
-    // 느리다
     list.sortWith(compareBy<Pair<Int, Int>> { it.first }.thenBy { it.second })
 
     val sb = StringBuilder()

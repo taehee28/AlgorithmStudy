@@ -4,3 +4,4 @@
 ## memo
 * List와 Array의 메모리 사용, 실행 시간 차이 
 * 단순히 contains만 확인하는 것은 hashSet 사용 
+* math.min, max보다 if문이 빠르다 

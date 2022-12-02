@@ -5,10 +5,10 @@ fun main() = StreamTokenizer(System.`in`.bufferedReader()).run {
     val a = i()
     val b = i()
 
-    print("${a.gdc(b)}\n${a.lcm(b)}")
+    print("${a.gcd(b)}\n${a.lcm(b)}")
 }
 
-private fun Int.gdc(other: Int): Int {
+private fun Int.gcd(other: Int): Int {
     var a = if (this > other) this else other
     var b = if (this > other) other else this
 
@@ -22,4 +22,4 @@ private fun Int.gdc(other: Int): Int {
     return a
 }
 
-private fun Int.lcm(other: Int) = (this * other) / this.gdc(other)
+private fun Int.lcm(other: Int) = (this * other) / this.gcd(other)

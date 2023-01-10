@@ -1,5 +1,3 @@
-package dynamicprogramming
-
 fun main () {
     val number = readln().toInt()
     val sb = StringBuilder()
